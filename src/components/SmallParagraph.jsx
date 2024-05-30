@@ -1,10 +1,17 @@
 import React from "react";
 
-function SmallParagraph({ text, otherClasses, colorClass, marginClass = "mx-auto" }) {
+function SmallParagraph({
+  text,
+  otherClasses,
+  colorClass,
+  marginTop = "mt-3",
+  marginClass = "mx-auto",
+}) {
   return (
     <p
-      className={`font-[400] text-[22px] ${otherClasses} ${colorClass} mt-3 w-[80%] ${marginClass}`}
+      className={`font-[400] lg:text-[22px] md:text-[20px] sm:text-[14px] ${otherClasses} ${colorClass} ${marginTop} ${marginClass}`}
     >
+      
       {text}
     </p>
   );

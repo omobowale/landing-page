@@ -15,3 +15,30 @@ body {
 .parallelogram section:first-child {
   transform: skewY(3deg);
 }
+
+
+
+.pointer-box-touched {
+  display: none;
+}
+
+.pointer-box:hover .pointer-box-touched {
+  opacity: 1;
+  display: block;
+}
+
+.pointer-box:hover .pointer-box-default {
+  display: none;
+}
+
+.custom-column-item-selected-icon {
+  display: none;
+}
+
+.custom-column-item:hover .custom-column-item-selected-icon {
+  display: block;
+}
+
+.custom-column-item:hover {
+  background-color: #e8e8e8;
+}

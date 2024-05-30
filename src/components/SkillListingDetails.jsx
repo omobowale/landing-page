@@ -4,12 +4,12 @@ import SkillLabelWithIcon from "./SkillLabelWithIcon";
 
 function SkillListingDetails({ label, cardTitle }) {
   return (
-    <div className="flex justify-between w-[90%] mx-auto text-left items-center">
+    <div className="flex lg:flex-row flex-col justify-between lg:w-[90%] mx-auto text-left items-center">
       {/* Left */}
-      <div className="w-[30%]">
-        <div className="font-[500] text-[24px] mb-5">{label}</div>
-        <div className="font-[400] text-[16px] text-[#202229]">
-          <div className="flex justify-between mb-3">
+      <div className="lg:w-[30%] md:w-[78%] sm:w-[100%] lg:mb-0 mb-[1em]">
+        <div className="font-[500] text-[24px] mb-5 lg:text-left sm:text-center vsm:text-left sm:ml-0 ml-7">{label}</div>
+        <div className="font-[400] text-[16px] text-[#202229] lg:block block sm:flex sm:flex-row justify-center items-center gap-8 vsm:flex-col sm:mb-0 mb-4 sm:ml-0 ml-7">
+          <div className="block sm:mb-0 sm:flex sm:flex-row vsm:flex-col items-center justify-between lg:gap-0 gap-8 lg:mb-3">
             <InfoStrip
               imageLink={"/assets/skills-vector.png"}
               value={989}
@@ -25,16 +25,18 @@ function SkillListingDetails({ label, cardTitle }) {
             imageLink={"/assets/profiles-vector.png"}
             value={1011}
             text={"Profiles"}
-          />{" "}
+          />
         </div>
       </div>
 
       {/* Right */}
-      <div>
-        <div className="w-[] bg-white rounded-md p-4">
-          <p className="font-[500] text-[16px] mb-5 pl-4">{cardTitle}</p>
+      <div className="sm:w-auto w-full">
+        <div className=" bg-white rounded-md p-4">
+          <p className="font-[500] text-[16px] mb-5 pl-4 sm:text-left text-center">
+            {cardTitle}
+          </p>
 
-          <div className="grid grid-cols-6 gap-4 items- justify-">
+          <div className="grid sm:grid-cols-6 grid-cols-2 vsm:items-center vsm:gap-4">
             <SkillLabelWithIcon
               label={"Shopify Developer"}
               imageLink={"/assets/shopify-icon.png"}

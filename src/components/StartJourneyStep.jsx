@@ -2,6 +2,7 @@ import React from "react";
 import MediumParagraph from "./MediumParagraph";
 import PartialRoundedBoxWithImage from "./PartialRoundedBoxWithImage";
 import SmallerParagraph from "./SmallerParagraph";
+import ProfileWithImageCard from "./ProfileWithImageCard";
 
 function StartJourneyStep({
   mainColor,
@@ -10,9 +11,10 @@ function StartJourneyStep({
   label,
   description,
   buttonSideText,
+  children
 }) {
   return (
-    <div className="flex ">
+    <div className="flex justify-between">
       {/* Left Side */}
       <div className="flex text-left gap-6 items-start">
         <h1
@@ -43,14 +45,16 @@ function StartJourneyStep({
               heightClass={"h-[55px]"}
               widthClass={"w-[55px]"}
               imagePath="/assets/forward-arrow-icon-white.png"
+              text={buttonSideText}
             />
-            <p className="font-[500] text-[15px]">{buttonSideText}</p>
           </div>
         </div>
       </div>
 
       {/* Right Side */}
-      <div></div>
+      <div className="">
+        {children}
+      </div>
     </div>
   );
 }
