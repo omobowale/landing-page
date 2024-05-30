@@ -57,7 +57,7 @@ function Header() {
             <div className="text-left">About Us</div>
             <div className="text-left">Contact Us</div>
           </div>
-          <div className="flex gap-4 items-center justify-center text-left">
+          <div className="flex gap-4 items-center justify-center text-left mb-4">
             <div className="text-white">Login</div>
             <div>
               <CustomActionButton
