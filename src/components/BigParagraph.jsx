@@ -22,7 +22,7 @@ function BigParagraph({
             {text}
             <span className="relative">
               <span
-                className={`absolute top-0 right-[0] mt-2 ${imageCustomClass}`}
+                className={`absolute top-0 right-[0] mt-1.5 ${imageCustomClass}`}
               >
                 {children}{" "}
               </span>

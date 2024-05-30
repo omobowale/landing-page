@@ -42,9 +42,8 @@ function App() {
       {/* First section */}
       <div className='mb-[10em]'>
         <div className='lg:w-[50%] md:w-[80%] sm:w-full mx-auto mt-[8em] px-[1em] md:px-0'>
-          <BigParagraph imageCustomClass={"ml-2 w-[1.5em]"} split={true} text={"Finding the right fit"} otherText="has never been easier.">
+          <BigParagraph imageCustomClass={"ml-1 w-[em]"} split={true} text={"Finding the right fit"} otherText="has never been easier.">
             <img
-              style={{ height: "1em", width: "2em" }}
               src="/assets/jason-gif.gif"
             />
           </BigParagraph>
@@ -177,7 +176,7 @@ function App() {
           <BigParagraph text={"Start your journey today."} />
           <div className='my-20'></div>
           <ParallelContainer className={"bg-[#EDEFFF]"}>
-            <section className='py-[3em] px-[1em] h-[22em]'>
+            <section className='py-[3em] px-[1em] lg:h-[22em]'>
               <StartJourneyStep buttonSideText={"Join Now"} description={"Explore the vast Zwilt marketplace to find the candidate that meets your needs."} label={"Find your next star performer."} value={1} mainColor={"#A387D1"} subColor={"white"}>
                 <div className="lg:flex gap-4 hidden">
                   <div>
@@ -222,7 +221,7 @@ function App() {
           </ParallelContainer>
           <div className='my-8'></div>
           <ParallelContainer className={"bg-[#FFF7E1]"}>
-            <section className='py-[3em] px-[1em] h-[22em]'>
+            <section className='py-[3em] px-[1em] lg:h-[22em]'>
               <StartJourneyStep buttonSideText={"Browse More"} description={"Assess the candidate through work history, transparent tests and video interviews."} label={"Evaluate to your heart's content."} value={2} mainColor={"#FFBE2E"} subColor={"white"} >
                 <div className="lg:flex gap-4 hidden">
                   <div>
@@ -267,7 +266,7 @@ function App() {
           </ParallelContainer>
           <div className='my-8'></div>
           <ParallelContainer className={"bg-[#F3F3F3]"}>
-            <section className='py-[3em] px-[1em] h-[22em]'>
+            <section className='py-[3em] px-[1em] lg:h-[22em]'>
               <StartJourneyStep buttonSideText={"Join Now"} description={"Onboard your candidate right away and start creating the next big thing."} label={"Start building your team."} value={3} mainColor={"black"} subColor={"#F3F3F3"} >
                 <div className="lg:flex gap-4 hidden">
                   <div>
